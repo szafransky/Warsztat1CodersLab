@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+.contact {
+    width: 100%;
+    height: 560px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 450px) {
+
+        & {
+            height: 900px;
+        }
+        .contact-container {
+            flex-direction: column;
+            width: 80% !important;
+
+            .mail-container {
+                display: flex;
+                align-items: center;
+                .mail-icon {
+                    margin-right: 10px;
+                    
+                }
+
+            }
+
+            .phone-container {
+                display: flex;
+
+                .tel-icon {
+                    margin-right: 10px;
+                }
+            }
+
+            .text-container {
+                width: 80%;
+
+                .contact-info-container {
+                    flex-direction: column;
+                    height: 100px;
+                    width: 100%;
+                }
+            }
+
+            .form-container {
+                width: 100%;
+                margin: 0;
+
+                button {
+                    margin: 0 auto;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+.contact .contact-container {
+    height: 100%;
+    width: 1300px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.text-container,
+.form-container {
+    height: 100%;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+   margin-right: 50px;
+}
+
+.text-container {
+    margin-left: 30px;
+}
+
+.text-container .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 49px;
+    font-weight: 400;
+    margin-left: 20px;
+
+}
+
+.text-container p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.contact-info-container {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    background: #ffffff;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+
+.mail-icon {
+    background-image: url("../assets/Mail\ Icon.svg");
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tel-icon {
+    background-image: url("../assets/Phone\ Icon.svg");
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.form-container input {
+    height: 40px;
+    border-style: none;
+    border-bottom:1px solid #A5A5A5;
+}
+
+.form-container label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #08a6e4;
+    letter-spacing: 3px;
+}
+
+.form-container .email {
+    margin-top: 30px;
+}
+
+.form-container p {
+    
+}
+.square-information {
+    display: flex;
+    margin-top: 30px;
+}
+
+.square-information p {
+    width: 600px;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #A5A5A5;
+}
+
+.form-container button {
+    height: 60px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 300px;
+    border-radius: 50px;
+    background: #08a6e4;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.square input {
+    display: none;
+}
+
+.square {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.square .checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    border: 1px solid #A5A5A5;
+ 
+}
+
+.square input:checked + .checkmark {
+    background-image: url("../assets/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+

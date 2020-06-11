@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+.benefits {
+
+    
+    @media (max-width: 450px){
+        height: auto;
+        .container {
+            align-items: center;
+            width: 85% !important;
+            height: auto;
+
+        }
+        
+        .containers3 {
+            flex-direction: column-reverse;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 450px;
+            margin-bottom: 20px;
+
+            &.phone-container {
+                flex-direction: column;
+            }
+            
+            .container {
+                width: 85%;
+                height: 46%;
+                .mac-photo {
+                    transform: scale(0.5);
+                    margin-left:45px;
+                }
+
+                .mac-text {
+                    margin-left: 40px;
+
+                    p {
+                        margin-right: 0;
+                        padding-bottom: 25px;
+                    }
+                }
+
+                .mac-text::after {
+                    content: none;
+                }
+
+                .phone-photo {
+                    height: 150px;
+                    margin-left: 30%;
+                    &::before {
+                        width: 150px;
+                        height: 150px;
+                        top: 0;
+                        left: 0;
+                    }
+                    .photo {
+                        width: 200px;
+                        height: 200px;
+                        margin: unset;
+                        top: -195px;
+                    }
+                    
+                }
+
+                .phone-text {
+                    margin-left: 70px;
+                    width: 300px;
+
+                    p {
+                        padding-bottom: 15px;
+                    }
+                    .slogan {
+                        font-size: 29px;
+                    }
+
+                    &::after {
+                        content: none;
+                    }
+                }
+
+                .trumpet_text {
+                    .slogan {
+                        width: 200px;
+                        margin-left: 40px;
+                    }
+
+                    p {
+                        margin-left: 40px;
+                    }
+                    &::after {
+                        content: none;
+                    }
+                }
+
+                
+            }
+
+            &.trumpet-container {
+                flex-direction: column;
+                
+                .trumpet-container {
+                    width: 100% !important;
+                    height: 56%;
+                    padding-top: 50px;
+                    .trumpet-photo {
+                        width: 250px;
+                    }
+                }
+                // .trumpet-photo {
+                //     width: 80%;
+                // }
+                .trumpet-text-container {
+                    width: 320px !important;
+                    height: 74%;
+                    padding-top: 32px;
+                    padding-bottom: 25px;
+                }
+               
+            }
+        }
+        // .containers3.phone-container {
+            
+        // }
+        
+    }
+    width: 100%;
+    height: 1200px;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    
+}
+
+.benefits .container {
+    height: 100%;
+    width: 1100px;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.containers3 {
+    width: 100%;
+    height: 370px;
+    border-radius: 8px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e8e9ed;
+
+}
+
+.containers3 .container {
+    height: 100%;
+    width: 500px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.benefits .photo {
+    height: 300px;
+    width: 400px;
+    
+    background-image: url("../assets/Macbook.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    z-index: 20;
+    position: relative;
+    top: -200px;
+}
+
+.benefits .mac-photo {
+    height: 300px;
+}
+
+.benefits .mac-photo::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background: rgb(251, 59, 100);
+    border-radius: 40px;
+    display: block; 
+    transform: rotate(45deg);
+    position: relative;
+    z-index: 1;
+    /* top: 100px; */
+    left: 240px;
+}
+
+
+
+.benefits .phone-photo .photo {
+    height: 400px;
+    width: 450px;
+    margin-top: 60px;
+    margin-left: 70px;
+    background-image: url("../assets/iPhone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+}
+
+.benefits .phone-photo::before {
+    content: "";
+    width: 310px;
+    height: 310px;
+    background-color: #08a6e4;
+    position: relative;
+    display: block;
+    top: 210px;
+    left: 60px;
+    border-radius: 50%;
+
+}
+
+.benefits .trumpet-photo {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 20px;
+    background-image: url("../assets/Trumpet.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+
+
+.benefits .slogan {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.benefits p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.benefits .container {
+    border-radius: 6px;
+}
+
+
+
+.benefits .containers3 .trumpet-container {
+    background: #55dfb4;
+}
+
+.benefits .trumpet-container {
+    border-style: none;
+    background: #f7f7f7;
+}
+
+.benefits .trumpet-container .trumpet-text-container {
+    border: 1px solid #e8e9ed;
+    width: 70%;
+    margin-right: 50px;
+}
+
+.benefits .mac-text::after,
+.benefits .phone-text::after,
+.benefits .trumpet_text::after {
+    content: "";
+    width: 350px;
+    height: 3px;
+    background: #FB3B64;
+    display: block;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.benefits .phone-text::after {
+    background: #08a6e4;
+}
+
+.benefits .trumpet_text::after {
+    background: #55dfb4;
+}
+
